@@ -46,12 +46,6 @@
     <Compile Include="ProductDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Sample.Infra.Repositorio\Sample.Infra.Data.Repository.csproj">
-      <Project>{ec50f4f5-51c6-4d67-b165-5debb2be59b0}</Project>
-      <Name>Sample.Infra.Data.Repository</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
