@@ -1,5 +1,5 @@
 # DDD-N-Layered-Architecture
-Samples .NET application implementing DDD principles. Based on sample presented in this book:
+Sample .NET application implementing DDD principles. Based on sample presented in this book:
 
 http://www.amazon.com/N-Layered-Domain-Oriented-Architecture-Guide-NET/dp/8493903612/ref=sr_1_1?ie=UTF8&qid=1386007359&sr=8-1&keywords=domain+oriented+nlayer
 
