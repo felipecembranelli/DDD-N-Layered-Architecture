@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Sample.DistributedServices.Service1" CodeBehind="CRMService.svc.cs" %>

@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Web.Mvc.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:System.Web.Mvc.Extensions.FileContentResultEx">
+            <summary>
+            自定义文件输出
+            </summary>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.FileContentResultEx.#ctor(System.String,System.String)">
+            <summary>
+            输出指定文件
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="filePath">文件所在位置</param>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.FileContentResultEx.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            输出指定文件
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="filePath">文件所在位置</param>
+            <param name="isdelete">输出完成，是否删除文件</param>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.FileContentResultEx.#ctor(System.String,System.String,System.String)">
+            <summary>
+            输出指定文件
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="filePath">文件所在位置</param>
+            <param name="contentType">文件头</param>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.FileContentResultEx.#ctor(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            输出指定文件
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="filePath">文件所在位置</param>
+            <param name="contentType">文件头</param>
+            <param name="isdelete">输出完成，是否删除文件</param>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.FileContentResultEx.#ctor(System.String,System.String,System.Byte[])">
+            <summary>
+            采用Bytes数据输出
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="extension">扩展名</param>
+            <param name="datas">数据</param>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.FileContentResultEx.#ctor(System.String,System.String,System.Byte[],System.String)">
+            <summary>
+            采用Bytes数据输出
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="extension">扩展名</param>
+            <param name="datas">数据</param>
+            <param name="contentType">文件头</param>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.FileContentResultEx.WriteFile(System.Web.HttpResponseBase)">
+            <summary>
+            写入文件
+            </summary>
+            <param name="response"></param>
+        </member>
+        <member name="P:System.Web.Mvc.Extensions.FileContentResultEx.FileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:System.Web.Mvc.Extensions.FileContentResultEx.FilePath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="P:System.Web.Mvc.Extensions.FileContentResultEx.IsDelete">
+            <summary>
+            是否删除文件
+            </summary>
+        </member>
+        <member name="P:System.Web.Mvc.Extensions.FileContentResultEx.IsBytes">
+            <summary>
+            是否是流文件
+            </summary>
+        </member>
+        <member name="P:System.Web.Mvc.Extensions.FileContentResultEx.Datas">
+            <summary>
+            数据流
+            </summary>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Common.JsonUtil.ToJson(System.Object)">
+            <summary>
+            转换成JSON
+            </summary>
+            <param name="obj">对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Common.JsonUtil.ToObject``1(System.String)">
+            <summary>
+            转换成对象
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="json">json字符串</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Web.Mvc.Extensions.Html.CheckBoxExtensions">
+            <summary>
+            CheckBox扩展类
+            </summary>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.CheckBoxExtensions.CheckBoxEx(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.String)">
+            <summary>
+            添加CheckBox控件
+            </summary>
+            <param name="htmlHelper">HtmlHelper</param>
+            <param name="name">控件名称</param>
+            <param name="value">控件的值，可以为null</param>
+            <param name="labelText">标签名称,可以为null</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.CheckBoxExtensions.CheckBoxEx(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.String,System.Boolean)">
+            <summary>
+            添加CheckBox控件
+            </summary>
+            <param name="htmlHelper">HtmlHelper</param>
+            <param name="name">控件名称</param>
+            <param name="value">控件的值，可以为null</param>
+            <param name="labelText">标签名称,可以为null</param>
+            <param name="isChecked">是否默认为选中状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.CheckBoxExtensions.CheckBoxEx(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.String,System.Object)">
+            <summary>
+            添加CheckBox控件
+            </summary>
+            <param name="htmlHelper">HtmlHelper</param>
+            <param name="name">控件名称</param>
+            <param name="value">控件的值，可以为null</param>
+            <param name="labelText">标签名称,可以为null</param>
+            <param name="htmlAttributes">添加Html属性，它是一个动态对象，如：new {name="abc",@class="txt"}</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.CheckBoxExtensions.CheckBoxEx(System.Web.Mvc.HtmlHelper,System.String,System.Object,System.String,System.Boolean,System.Object)">
+            <summary>
+            添加CheckBox控件
+            </summary>
+            <param name="html">HtmlHelper</param>
+            <param name="name">控件名称</param>
+            <param name="value">控件的值，可以为null</param>
+            <param name="labelText">标签名称,可以为null</param>
+            <param name="isChecked">是否默认为选中状态</param>
+            <param name="htmlAttributes">添加Html属性，它是一个动态对象，如：new {name="abc",@class="txt"}</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.CheckBoxExtensions.CheckBoxForEx``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object,System.String)">
+            <summary>
+            添加CheckBox控件
+            </summary>
+            <typeparam name="TModel">Model</typeparam>
+            <typeparam name="TProperty">属性</typeparam>
+            <param name="htmlHelper">HtmlHelper</param>
+            <param name="expression">指定Model中的属性</param>
+            <param name="checkValue">选中需要的值</param>
+            <param name="labelText">标签名称,可以为null</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.CheckBoxExtensions.CheckBoxForEx``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Object,System.String,System.Object)">
+            <summary>
+            添加CheckBox控件
+            </summary>
+            <typeparam name="TModel">Model</typeparam>
+            <typeparam name="TProperty">属性</typeparam>
+            <param name="htmlHelper">HtmlHelper</param>
+            <param name="expression">指定Model中的属性</param>
+            <param name="checkValue">选中需要的值</param>
+            <param name="labelText">标签名称,可以为null</param>
+            <param name="htmlAttributes">添加Html属性，它是一个动态对象，如：new {name="abc",@class="txt"}</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Web.Mvc.Extensions.Html.HtmlHelperExtensions">
+            <summary>
+            自定义HTML控件扩展
+            </summary>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.HtmlHelperExtensions.ResolveUrl(System.Web.Mvc.HtmlHelper,System.String)">
+            <summary>
+            获取真实路径
+            </summary>
+            <param name="html"></param>
+            <param name="relativeUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.HtmlHelperExtensions.GetScriptUrl(System.Web.Mvc.HtmlHelper)">
+            <summary>
+            获取当前View所在目录的js/目录下，同Action名的文件
+            </summary>
+            <param name="html"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.HtmlHelperExtensions.GetScriptUrl(System.Web.Mvc.HtmlHelper,System.String)">
+            <summary>
+            获取指定文件路径的JS文件
+            </summary>
+            <param name="html"></param>
+            <param name="file">指定文件</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.HtmlHelperExtensions.ScriptInclude(System.Web.Mvc.HtmlHelper)">
+            <summary>
+            插入JS脚本
+            </summary>
+            <param name="html"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.HtmlHelperExtensions.ScriptInclude(System.Web.Mvc.HtmlHelper,System.String)">
+            <summary>
+            引用JS
+            </summary>
+            <param name="html"></param>
+            <param name="jsFile">以 / 开头，表示取Scripts目录下的JS，~ 开头，则直接调用文件；否则调用当前目录下面的文件</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Web.Mvc.Extensions.Html.RadioExtensions">
+            <summary>
+            Radio扩展
+            </summary>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.RadioExtensions.RadioButtonEx(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object,System.String)">
+            <summary>
+            添加Radio控件
+            </summary>
+            <param name="htmlHelper">HtmlHelper</param>
+            <param name="name">控件名称</param>
+            <param name="id">控件ID</param>
+            <param name="value">值</param>
+            <param name="labelText">标签名称,可以为null</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.RadioExtensions.RadioButtonEx(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object,System.String,System.Boolean)">
+            <summary>
+            添加Radio控件
+            </summary>
+            <param name="htmlHelper">HtmlHelper</param>
+            <param name="name">控件名称</param>
+            <param name="id">控件ID</param>
+            <param name="value">值</param>
+            <param name="labelText">标签名称,可以为null</param>
+            <param name="isChecked">是否默认为选中状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.RadioExtensions.RadioButtonEx(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object,System.String,System.Object)">
+            <summary>
+            添加Radio控件
+            </summary>
+            <param name="htmlHelper">HtmlHelper</param>
+            <param name="name">控件名称</param>
+            <param name="id">控件ID</param>
+            <param name="value">值</param>
+            <param name="labelText">标签名称,可以为null</param>
+            <param name="htmlAttributes">添加Html属性，它是一个动态对象，如：new {name="abc",@class="txt"}</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.RadioExtensions.RadioButtonEx(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Object,System.String,System.Boolean,System.Object)">
+            <summary>
+            添加Radio控件
+            </summary>
+            <param name="htmlHelper">HtmlHelper</param>
+            <param name="name">控件名称</param>
+            <param name="id">控件ID</param>
+            <param name="value">值</param>
+            <param name="labelText">标签名称,可以为null</param>
+            <param name="isChecked">是否默认为选中状态</param>
+            <param name="htmlAttributes">添加Html属性，它是一个动态对象，如：new {name="abc",@class="txt"}</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.RadioExtensions.RadioButtonForEx``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Object,System.String)">
+            <summary>
+            添加Radio控件
+            </summary>
+            <typeparam name="TModel">Model</typeparam>
+            <typeparam name="TProperty">属性</typeparam>
+            <param name="htmlHelper">HtmlHelper</param>
+            <param name="expression">指定Model中的属性</param>
+            <param name="id">控件ID</param>
+            <param name="checkValue">选中需要的值</param>
+            <param name="labelText">标签名称,可以为nul</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.RadioExtensions.RadioButtonForEx``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Object,System.String,System.Object)">
+            <summary>
+            添加Radio控件
+            </summary>
+            <typeparam name="TModel">Model</typeparam>
+            <typeparam name="TProperty">属性</typeparam>
+            <param name="htmlHelper">HtmlHelper</param>
+            <param name="expression">指定Model中的属性</param>
+            <param name="id">控件ID</param>
+            <param name="checkValue">选中需要的值</param>
+            <param name="labelText">标签名称,可以为nul</param>
+            <param name="htmlAttributes">添加Html属性，它是一个动态对象，如：new {name="abc",@class="txt"}</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.RadioExtensions.RadioButtonListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem})">
+            <summary>
+            添加Radio控件
+            </summary>
+            <typeparam name="TModel">Model</typeparam>
+            <typeparam name="TProperty">属性</typeparam>
+            <param name="htmlHelper">HtmlHelper</param>
+            <param name="expression">指定Model中的属性</param>
+            <param name="selectlist">列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Mvc.Extensions.Html.RadioExtensions.RadioButtonListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Object)">
+            <summary>
+            添加Radio控件
+            </summary>
+            <typeparam name="TModel">Model</typeparam>
+            <typeparam name="TProperty">属性</typeparam>
+            <param name="htmlHelper">HtmlHelper</param>
+            <param name="expression">指定Model中的属性</param>
+            <param name="selectlist">列表</param>
+            <param name="htmlAttributes">添加Html属性，它是一个动态对象，如：new {name="abc",@class="txt"}</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

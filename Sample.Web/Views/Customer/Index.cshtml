@@ -1,0 +1,31 @@
+﻿@model Sample.Web.Models.CustomerListVM
+
+@{
+    ViewBag.Title = "Index3";
+}
+
+<h2>Index3</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.Customers) {
+    
+    <tr>
+        <td>
+            @Html.Label(item.FirstName)
+            @Html.Label(item.LastName)
+            @Html.Label(item.Telephone)
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
