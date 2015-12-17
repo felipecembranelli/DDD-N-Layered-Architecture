@@ -5,7 +5,7 @@ http://www.amazon.com/N-Layered-Domain-Oriented-Architecture-Guide-NET/dp/849390
 
 ## Architecture Overview
 
-![alt tag](https://github.com/felipecembranelli/PocHybris/blob/master/diagram/ddd_sample.png)
+![alt tag](https://github.com/felipecembranelli/PocHybris/blob/master/Diagram/ddd_sample.png)
 
 ## Contributing
 
